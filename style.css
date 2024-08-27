@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Brygada+1918:wght@600&family=Crimson+Text&family=Dela+Gothic+One&family=Edu+TAS+Beginner:wght@600&family=Josefin+Sans:ital,wght@1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&family=Oswald&family=Pixelify+Sans:wght@400;500&family=Playpen+Sans:wght@500&family=Roboto+Condensed&family=Teko:wght@300&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background: rgb(48, 47, 47);
+
+   color: white;
+}
+.headtext{
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    font-size: 25px;
+    font-family:  cursive;
+}
+#search-form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background: linear-gradient(90deg , rgb(0, 0, 0) ,rgb(204, 199, 199) ) ;
+    display:flex;
+    align-items: center;
+    border-radius: 9px;
+    /* justify-content: center; */
+
+}
+
+#search-form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0 30px;
+}
+#search-form button{
+    padding: 0 40px;
+    height: 100%;
+    background: rgb(236, 30, 65) ;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 9px ;
+    border-bottom-right-radius: 9px ;
+    cursor: pointer;
+}
+::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'DM Serif Display', cursive;
+}
+#show-more-button{
+    background-color: rgb(236, 30, 65);
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    padding: 10px 25px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+    font-family: 'DM Serif Display', cursive;
+}
+#search-result{
+    width: 80%;
+    margin: 100px auto ;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-gap: 40px;
+    /* border: 2px solid black; */
+    /* background: rgb(211, 4, 4); */
+
+}
+#search-result img{
+    width: 100%;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 20px auto 50px ;
+}
